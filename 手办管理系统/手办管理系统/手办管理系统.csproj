@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{960C37AD-38EB-4AAE-9A41-ED4B03918DF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>手办管理系统</RootNamespace>
+    <AssemblyName>手办管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CartItemsv.cs" />
+    <Compile Include="ChangPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangPwd.Designer.cs">
+      <DependentUpon>ChangPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Order.Designer.cs">
+      <DependentUpon>Check_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\U_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\U_customer.Designer.cs">
+      <DependentUpon>U_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="denglu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denglu.Designer.cs">
+      <DependentUpon>denglu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front.Designer.cs">
+      <DependentUpon>Front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partment\D_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partment\D_department.Designer.cs">
+      <DependentUpon>D_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partment\I_Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partment\I_Department.Designer.cs">
+      <DependentUpon>I_Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partment\U_department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partment\U_department.Designer.cs">
+      <DependentUpon>U_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person.Designer.cs">
+      <DependentUpon>Person.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Select_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_Order.Designer.cs">
+      <DependentUpon>Select_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopCart.Designer.cs">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shoubanguanliDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shoubanguanliDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SubCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubCart.Designer.cs">
+      <DependentUpon>SubCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tproducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tproducts.Designer.cs">
+      <DependentUpon>Tproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品管理\delete_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品管理\delete_product.Designer.cs">
+      <DependentUpon>delete_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品管理\Updata_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品管理\Updata_product.Designer.cs">
+      <DependentUpon>Updata_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zhuce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zhuce.Designer.cs">
+      <DependentUpon>zhuce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品管理\Insert_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品管理\Insert_product.Designer.cs">
+      <DependentUpon>Insert_product.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangPwd.resx">
+      <DependentUpon>ChangPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Check_Order.resx">
+      <DependentUpon>Check_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\U_customer.resx">
+      <DependentUpon>U_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denglu.resx">
+      <DependentUpon>denglu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front.resx">
+      <DependentUpon>Front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partment\D_department.resx">
+      <DependentUpon>D_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partment\I_Department.resx">
+      <DependentUpon>I_Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partment\U_department.resx">
+      <DependentUpon>U_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person.resx">
+      <DependentUpon>Person.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Select_Order.resx">
+      <DependentUpon>Select_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopCart.resx">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubCart.resx">
+      <DependentUpon>SubCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tproducts.resx">
+      <DependentUpon>Tproducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品管理\delete_product.resx">
+      <DependentUpon>delete_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品管理\Updata_product.resx">
+      <DependentUpon>Updata_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zhuce.resx">
+      <DependentUpon>zhuce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品管理\Insert_product.resx">
+      <DependentUpon>Insert_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="shoubanguanliDataSet.xsc">
+      <DependentUpon>shoubanguanliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet.xss">
+      <DependentUpon>shoubanguanliDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet1.xsc">
+      <DependentUpon>shoubanguanliDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet1.xss">
+      <DependentUpon>shoubanguanliDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet2.xsc">
+      <DependentUpon>shoubanguanliDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet2.xss">
+      <DependentUpon>shoubanguanliDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet3.xsc">
+      <DependentUpon>shoubanguanliDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet3.xss">
+      <DependentUpon>shoubanguanliDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet4.xsc">
+      <DependentUpon>shoubanguanliDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet4.xss">
+      <DependentUpon>shoubanguanliDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet5.xsc">
+      <DependentUpon>shoubanguanliDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="shoubanguanliDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shoubanguanliDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shoubanguanliDataSet5.xss">
+      <DependentUpon>shoubanguanliDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
